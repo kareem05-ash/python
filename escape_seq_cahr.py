@@ -14,7 +14,7 @@
 # Concatination => using '+' operator
 # -------------------------------------------------------------------------------------------------
 
-# \b : 
+# \b :
 print ("Kareemm\b Ashraf") # it prints "kareem Ashraf" not "Kareemm Ashraf"
 
 # \newline
