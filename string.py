@@ -27,6 +27,8 @@ index = "kareem ashraf"
 print (index)
 print (index[0]) # it prints the first character in in the string : 'k'
 print (index[7]) # it prints the (7-1)th character in in the string : 'a'
+print (index[-1]) # it prints the first character from the end : 'f'
+print (index[-3]) # it prints the (-(-3))th character from the end : 'r'
 #   slicing 
 #       string[starting_index : ending_index] //note that ending_index isn't included 
 #       string[start : end : step] //step here representing the step of the printer (if step = 2, it will ignore character and print character and so on)

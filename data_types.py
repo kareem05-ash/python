@@ -4,6 +4,7 @@
 print (type(10)) # int => Integer
 print (type(10.3)) # float => Floating Point Number
 print (type("Kareem Ashraf")) # str => String
+print (type(2+4j)) # complex => Complex Number
 print (type(2 == 2)) # bool => Boolean
 print (2 == 3) # it prints : False
 print (2 == 2) # it prints : True
