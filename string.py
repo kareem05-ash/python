@@ -39,6 +39,7 @@ print (sli)
 print (sli[2:7]) # it'll print from the index : 2 till the index : 7-1 (med M)
 print (sli[ : 8]) # it'll print from the start to the index : 8-1 (Ahmed Mo)
 print (sli[2 : ]) # it'll print from the index : 2 to the end (med Mohamed)
+print (sli[-4 : -1]) # it'll print from the -(-4)th character from the end till the (-(-1)-1)th character from the end : ame
 print (sli[ : : 1]) # there are no starting or ending index so it'll print the whole string with step : 1 (Ahmed Mohamed)
 print (sli[ : : 2]) # ``     ``      ``   ``     ``           ``` `````      ``         ``  with step : 2 (AmdMhmd)
 
