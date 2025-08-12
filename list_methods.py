@@ -1,8 +1,8 @@
 # ------------------------------------------------------------------------------------------------------
 # --------List Methods--------
 # ----------------------------
-# list_name.append(item) => it inserts the item in the end of your list
-# list_name.extend(list) => it inserts the list in the end of your list
+# list_name.append(item) => it inserts the item at the end of your list
+# list_name.extend(list) => it inserts the list at the end of your list
 # list_name.remove(item) => it removes the item from your list only once from the start
 # list_name.sort(reverse = (True or False)) => it sorts your list which is formed from numbers only
 #       if(reverse = False) the sortion will be from the smaller
