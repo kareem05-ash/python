@@ -18,7 +18,7 @@
 # set_name.intersection(set) => it returns the common items between your set 'set_name' and set 'set'
 #          NOTE a.intersection is the same as a & b
 # set_name.intersection_update(set) => it's the same as intersection(set) but, it updates your set 'set_name' with the returned values
-# set_name.symmetric_difference(set) => it returns the items arn't common between your set 'set_name' and set 'set'
+# set_name.symmetric_difference(set) => it returns the items arn't common between your set 'set_name' and set 'set' (all items, in 'set_name' and 'set')
 #          NOTE a.system_difference(b) is the same as a ^ b
 # set_name.symmetric_difference_update(set) => it's the same as symmetric_difference(set) but, it updates your set 'set_name' with the returned values
 # set_name.issuperset(set) => returns 'Ture' if all values of 'set' are in 'set_name' == 'set_name' is a superset for 'set', returns 'False' if not.
@@ -116,32 +116,51 @@ print(her_set) # {'kareem', True, False, 23}
 ## set_name.intersection(set) : 
 my_set = {'kareem', 3, 'x', True}
 her_set = {'kareem', True, False, 23}
-my_set.intersection(her_set)
-print(my_set) # {3, 'x'}
+print(my_set.intersection(her_set)) # {'kareem', True}
 print(her_set) # {'kareem', True, False, 23}
 
 
 ## set_name.intersection_update(set) :  
-
+my_set = {'kareem', 3.4, 23+0j, False, True}
+her_set = {'she', 3.4, 23+2j, True}
+my_set.intersection_update(her_set)
+print(my_set)   # {True, 3.4}
 
 
 ## set_name.symmetric_difference(set) : 
-
+my_set = {'kareem', 'ashraf', False, 23, 3+4j}
+her_set = {'she', 'ashraf', True, 23}
+print(my_set.symmetric_difference(her_set)) # {'kareem', False, 3+4j, 'she', True}
+print(my_set)   # it the same: 'kareem', 'ashraf', False, 23, 3+4j}
 
 
 ## set_name.symmetric_difference_update(set) : 
-
+my_set = {'kareem', 'ashraf', False, 23, 3+4j}
+her_set = {'she', 'ashraf', True, 23}
+print(my_set.symmetric_difference_update(her_set)) # NONE
+print(my_set)   # {'kareem', False, 3+4j, 'she', True}
 
 
 ## set_name.issuperset(set) : 
+my_set = {'kareem', 'ashraf', True, 23.4, 22, False, 'she'}
+her_set = {'she', True, 22}
+his_set = {23.4, 'mostafa', False}
+print(my_set.issuperset(her_set))   # True
+print(my_set.issuperset(his_set))   # False
 
 
 
 ## set_name.issubset(set) : 
-
+my_set = {'kareem', 'ashraf', True, 23.4, 22, False, 'she'}
+her_set = {'she', True, 22}
+his_set = {23.4, 'mostafa', False}
+print(her_set.issubset(my_set))       # True
+print(her_set.issubset(his_set))      # False
 
 
 ## set_name.isdisjoint(set) : 
-
-
-
+my_set = {'kareem', 'ashraf', True, 23.4, 22, False, 'she'}
+her_set = {'she', True, 22}
+his_set = {23.4, 'mostafa', False}
+print(my_set.isdisjoint(her_set))   # False
+print(her_set.isdisjoint(his_set))  # True
