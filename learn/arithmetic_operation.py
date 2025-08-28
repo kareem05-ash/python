@@ -55,7 +55,7 @@ print(type(24%5)) # <class 'int'>
 print(type(12.3%6)) # <class 'float'>
 
 ## Exponent (**) : common exponent operation (2**3 === 2^3)
-print("## Exponent (*) : ")
+print("## Exponent (**) : ")
 print(2**5) # 32 (2^5)
 print(3**3) # 27
 print(5**4) # 625
