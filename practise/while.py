@@ -75,3 +75,46 @@ while current_pop < admin_limit:
 print(f"It took ({hr}) hours to exceede ({admin_limit:,}) and hit ({current_pop:,})")
 print('*' * 50)
 ######################################################################################################################################################
+
+# Assignment_1
+# Friends List
+print("Assignment_1")
+friends = ['Kareem', 'ashraf', 'Mostafa', 'aboelala', 'Ipraheem']
+friend_id = 0
+count = 0
+while friend_id < len(friends):
+    if friends[friend_id].istitle(): print(friends[friend_id])
+    else: count += 1
+    friend_id += 1
+print(f"Friends Printed And Ignored Nmaes Count Is {count}")
+print('*' * 50)
+######################################################################################################################################################
+
+# Assignment_2
+# Print List with one line of code
+print("Assignment_2")
+skills = ['HTML', 'CSS', 'JavaScript', 'PHP', 'Python']
+while skills:
+    print(skills.pop(0))
+print('*' * 50)
+######################################################################################################################################################
+
+# Assignment_3
+# Input Friend List
+print("Assignment_3")
+my_friends = []
+max_friends = 4
+while len(my_friends) < max_friends:
+    input_friend = input("Enter friend name: ").strip()
+    if input_friend.isupper(): print("Unsupported Format. Try other name!")
+    elif input_friend.islower():
+        input_friend = input_friend.capitalize()
+        print("The name has been capitalized")
+        my_friends.append(input_friend)
+        print(f"{input_friend} has been added to the list. ({max_friends - len(my_friends)}) places left")
+    elif input_friend.istitle():
+        my_friends.append(input_friend)
+        print(f"{input_friend} has been added to the list. ({max_friends - len(my_friends)}) places left")
+print(f"Your friend list: {my_friends}")
+print('*' * 50)
+######################################################################################################################################################
