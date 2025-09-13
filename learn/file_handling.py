@@ -8,7 +8,7 @@
 # [1] => "r" stands for 'Read'  : (Default Value) opens the file to read from it and prevent any write operations. It gives an error if the file desn't exist
 # [2] => "w" stands for 'Write' : opens the file to overwrite on it. It creates the file if it doesn't exist
 # [3] => "a" stands for 'Append': opens the file to append data to it without deleting the existing data. It creates the file if it doesn't exist  
-# [4] => "x" stands for 'Create': creates the file. It gives an error if the file exists                       
+# [4] => "x" stands for 'Create': creates the file. It gives an error if the file exists
 # 
 # Relative vs Absolute path: 
 # -------------------------
@@ -61,7 +61,18 @@
 # myfile.tell()     => returns the index of the cursor (file pointer)
 # myfile.seek(n)    => moves the index of the cursor to the index 'n'
 # myfile.truncate(n)=> truncates (erases) file content from index 'n'. NOTE: if 'n' not exist it truncates the file from the cursor index
-# os.remove("file/path/relative/or/absolute")   => this command delete the file to this path                                                                                              # 
+# os.remove("file/path/relative/or/absolute")   => this command delete the file to this path
+# 
+# --------------------  Mode vs Mode+ --------------------
+# --------------------------------------------------------
+# [1] => "r "   : When you only need to read from an existing file
+# [2] => "r+"   : When you need to read and modify an existing file
+# [3] => "w "   : When you creating a new file or overwriting completely for an existing one
+# [4] => "w+"   : When you want to create / overwrite / read-back from it
+# [5] => "a "   : When you creating a new file or appending to the end of existing one
+# [6] => "a+"   : When you want to create / appen / read-back from it
+# [7] => "a "   : When you want to ensure that you've created a new file
+# 
 ########################################################################################################################################################################################################
 
 
