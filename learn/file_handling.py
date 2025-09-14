@@ -22,6 +22,7 @@
 # Method_2  => os.chdir()   : changes the working directory
 # Method_3  => os.path.abspath(__file__)    : returns the absolute path to your working file (working file: file you run this command at it)
 # Method_4  => os.path.relpath(__file__)    : returns the relative path to your working file relative to current working directory
+# Method_5  => os.path.basename(__file__)   : returns the name of the working file. e.g., file_handling.py
 # 
 # Some NOTEs: 
 # ----------
