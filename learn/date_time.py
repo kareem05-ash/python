@@ -32,8 +32,8 @@
 # (currentDate - myBirthDay)    => returns {num of days} days, hh:mm:ss:micros
 # (currentDate - myBirthDay).days   => returns {num of days} "as float number"
 # ************************* Configure Date-Stamp *************************
-# NOTE - To format your date, you should use 'strformat' method as following
-#       e.g., dt.now().strformat("%d / %m / %Y") => 17 / 09 / 2025
+# NOTE - To format your date, you should use 'strftime' method as following
+#       e.g., dt.now().strftime("%d / %m / %Y") => 17 / 09 / 2025
 # NOTE - This website is a guideline for this topic: [https://strftime.org]
 # Sone Examples on strftime: 
 #   [1] %a  => This is for day name shorted. e.g., Sun
