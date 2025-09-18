@@ -1,0 +1,11 @@
+product_id,country,price,quantity
+P101,Germany,19.99,8
+P103,Germany,59.99,3
+P105,Germany,199.99,2
+P107,Germany,12.00,18
+P109,Germany,89.50,5
+P100,USA,29.99,15
+P102,France,14.50,22
+P104,UK,9.99,30
+P106,Italy,24.50,11
+P108,Spain,39.75,7
