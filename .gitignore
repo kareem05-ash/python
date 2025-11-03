@@ -1,2 +1,3 @@
-learn\__pycach__\
-*.pyc
+__pycach__/
+PyWhatKit_DB.txt
+Weekly_msgs/
