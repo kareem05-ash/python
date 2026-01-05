@@ -2,3 +2,4 @@ __pycach__/
 PyWhatKit_DB.txt
 Weekly_msgs/
 report.txt
+*.db
